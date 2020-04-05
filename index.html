@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>patilbirthday</title>
+<title>index</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13083,7 +13083,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13097,7 +13097,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">videolist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;intro.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;ramanintro.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;neelamgunmala.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;jeetbhaipatel.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;virendertusharmallikarjun.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;abhilashpratiksmith.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;arun.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;suvil.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;ankita.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;laddoo.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;mandar.mp4&#39;</span><span class="p">]</span>
@@ -13111,7 +13111,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">displayIV</span><span class="p">(</span><span class="n">img</span><span class="p">,</span><span class="n">vid</span><span class="p">):</span>
@@ -13125,7 +13125,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">displayIII</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span><span class="n">img2</span><span class="p">,</span><span class="n">img3</span><span class="p">):</span>
@@ -13142,7 +13142,26 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">displayIIIV</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span><span class="n">img2</span><span class="p">,</span> <span class="n">vid1</span><span class="p">,</span> <span class="n">vid2</span><span class="p">,</span><span class="n">vid3</span><span class="p">):</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&#39;Images/</span><span class="si">{}</span><span class="s2">&#39;  width=&quot;300&quot;&gt;&lt;/td&gt;</span><span class="se">\</span>
+<span class="s2">    &lt;td&gt;&lt;video alt=&quot;test&quot;  height=&quot;300&quot; controls&gt;&lt;source src=&quot;Videos/</span><span class="si">{}</span><span class="s2">&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;&lt;/td&gt;</span><span class="se">\</span>
+<span class="s2">    &lt;td&gt;&lt;video alt=&quot;test&quot;  height=&quot;300&quot; controls&gt;&lt;source src=&quot;Videos/</span><span class="si">{}</span><span class="s2">&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;&lt;/td&gt;</span><span class="se">\</span>
+<span class="s2">    &lt;td&gt;&lt;img src=&#39;Images/</span><span class="si">{}</span><span class="s2">&#39;  width=&quot;300&quot;&gt;&lt;/td&gt;</span><span class="se">\</span>
+<span class="s2">    &lt;td&gt;&lt;video alt=&quot;test&quot;  height=&quot;300&quot; controls&gt;&lt;source src=&quot;Videos/</span><span class="si">{}</span><span class="s2">&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;&lt;/td&gt;</span>
+<span class="s2">    &lt;/tr&gt;&lt;/table&gt;&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span> <span class="n">vid1</span><span class="p">,</span> <span class="n">vid2</span><span class="p">,</span><span class="n">img2</span><span class="p">,</span><span class="n">vid3</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">displayV</span><span class="p">(</span><span class="n">vid</span><span class="p">):</span>
@@ -13156,7 +13175,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">displaySideBySide</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span><span class="n">vid1</span><span class="p">,</span><span class="n">img2</span><span class="p">,</span><span class="n">vid2</span><span class="p">):</span>
@@ -13172,7 +13191,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">img</span><span class="p">,</span> <span class="n">vid</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">imagelist</span><span class="p">[:</span><span class="mi">6</span><span class="p">],</span> <span class="n">videolist</span><span class="p">[:</span><span class="mi">6</span><span class="p">]):</span>
@@ -13194,7 +13213,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Images/patil.jpg'  width="300"></td><td><video alt="test"  height="300" controls><source src="Videos/intro.mp4" type="video/mp4"></video></td></tr></table>
+<table><tr><td><img src='Images/patil.jpg'  width="300" height=100px></td><td><video alt="test"  height=300px controls><source src="Videos/intro.mp4" type="video/mp4"></video></td></tr></table>
 </div>
 
 </div>
@@ -13206,7 +13225,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Images/raman.png'  width="300"></td><td><video alt="test"  height="300" controls><source src="Videos/ramanintro.mp4" type="video/mp4"></video></td></tr></table>
+<table><tr><td><img src='Images/raman.png'  width="300" height=100px></td><td><video alt="test"  height=300px controls><source src="Videos/ramanintro.mp4" type="video/mp4"></video></td></tr></table>
 </div>
 
 </div>
@@ -13218,7 +13237,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Images/neelam.jpg'  width="300"></td><td><video alt="test"  height="300" controls><source src="Videos/neelamgunmala.mp4" type="video/mp4"></video></td></tr></table>
+<table><tr><td><img src='Images/neelam.jpg'  width="300" height=100px></td><td><video alt="test"  height=300px controls><source src="Videos/neelamgunmala.mp4" type="video/mp4"></video></td></tr></table>
 </div>
 
 </div>
@@ -13230,7 +13249,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Images/jeet.jpg'  width="300"></td><td><video alt="test"  height="300" controls><source src="Videos/jeetbhaipatel.mp4" type="video/mp4"></video></td></tr></table>
+<table><tr><td><img src='Images/jeet.jpg'  width="300" height=100px></td><td><video alt="test"  height=300px controls><source src="Videos/jeetbhaipatel.mp4" type="video/mp4"></video></td></tr></table>
 </div>
 
 </div>
@@ -13242,7 +13261,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Images/mallik.jpg'  width="300"></td><td><video alt="test"  height="300" controls><source src="Videos/virendertusharmallikarjun.mp4" type="video/mp4"></video></td></tr></table>
+<table><tr><td><img src='Images/mallik.jpg'  width="300" height=100px></td><td><video alt="test"  height=300px controls><source src="Videos/virendertusharmallikarjun.mp4" type="video/mp4"></video></td></tr></table>
 </div>
 
 </div>
@@ -13254,7 +13273,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Images/abhilash.jpg'  width="300"></td><td><video alt="test"  height="300" controls><source src="Videos/abhilashpratiksmith.mp4" type="video/mp4"></video></td></tr></table>
+<table><tr><td><img src='Images/abhilash.jpg'  width="300" height=100px></td><td><video alt="test"  height=300px controls><source src="Videos/abhilashpratiksmith.mp4" type="video/mp4"></video></td></tr></table>
 </div>
 
 </div>
@@ -13272,7 +13291,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displaySideBySide</span><span class="p">(</span><span class="n">imagelist</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span> <span class="n">videolist</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span> <span class="n">imagelist</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="n">videolist</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">])</span>
@@ -13311,7 +13330,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displaySideBySide</span><span class="p">(</span><span class="n">imagelist</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">],</span> <span class="n">videolist</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">],</span> <span class="s1">&#39;jain.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;jain.mp4&#39;</span><span class="p">)</span>
@@ -13350,7 +13369,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displaySideBySide</span><span class="p">(</span><span class="n">imagelist</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">videolist</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">imagelist</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">videolist</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -13389,7 +13408,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displaySideBySide</span><span class="p">(</span><span class="s1">&#39;pushpak.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;pushpak.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;naveen.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;naveen.mp4&#39;</span><span class="p">)</span>
@@ -13428,7 +13447,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displaySideBySide</span><span class="p">(</span><span class="s1">&#39;gyan.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;tiwariji.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;jeet.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;jeetbhaipatel2.mp4&#39;</span><span class="p">)</span>
@@ -13467,7 +13486,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displaySideBySide</span><span class="p">(</span><span class="s1">&#39;rajat.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;rajat.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;anoop.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;anoop.mp4&#39;</span><span class="p">)</span>
@@ -13500,13 +13519,13 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Sarath-Bhai-and-Jain-Bhai"><h1><center><b>Sarath Bhai and Jain Bhai</b></center></h1><a class="anchor-link" href="#Sarath-Bhai-and-Jain-Bhai">&#182;</a></h1>
+<h1 id="Sarath-Bhai-and-Ravins"><h1><center><b>Sarath Bhai and Ravins</b></center></h1><a class="anchor-link" href="#Sarath-Bhai-and-Ravins">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displaySideBySide</span><span class="p">(</span><span class="s1">&#39;sarath.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;sarath.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;ravins.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;ravins.mp4&#39;</span><span class="p">)</span>
@@ -13539,13 +13558,53 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Some-Special-Friends-from-LNCT"><h1><center><b>Some Special Friends from LNCT</b></center></h1><a class="anchor-link" href="#Some-Special-Friends-from-LNCT">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">displayIIIV</span><span class="p">(</span><span class="s1">&#39;aditi.jpg&#39;</span><span class="p">,</span><span class="s1">&#39;dipesh.jpg&#39;</span><span class="p">,</span><span class="s1">&#39;aditi1.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;aditi2.mp4&#39;</span><span class="p">,</span><span class="s1">&#39;friend1.mp4&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table><tr><td><img src='Images/aditi.jpg'  width="300"></td>    <td><video alt="test"  height="300" controls><source src="Videos/aditi1.mp4" type="video/mp4"></video></td>    <td><video alt="test"  height="300" controls><source src="Videos/aditi2.mp4" type="video/mp4"></video></td>    <td><img src='Images/dipesh.jpg'  width="300"></td>    <td><video alt="test"  height="300" controls><source src="Videos/friend1.mp4" type="video/mp4"></video></td>
+    </tr></table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Babu-Bhaiya,-KP-along-with-Bachchan-Sab"><h1><center><b>Babu Bhaiya, KP along with Bachchan Sab</b></center></h1><a class="anchor-link" href="#Babu-Bhaiya,-KP-along-with-Bachchan-Sab">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">displayIV</span><span class="p">(</span><span class="s1">&#39;aishwarya.jpg&#39;</span><span class="p">,</span><span class="s1">&#39;aishwarya.mp4&#39;</span><span class="p">)</span>
@@ -13623,10 +13682,15 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">imlist</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;Photos&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">_nsre</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;([0-9]+)&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">natural_sort_key</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span> <span class="k">else</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">_nsre</span><span class="p">,</span> <span class="n">s</span><span class="p">)]</span> 
 </pre></div>
 
     </div>
@@ -13636,10 +13700,24 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">imlist</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;Photos&#39;</span><span class="p">)</span>
+<span class="n">imlist</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="n">natural_sort_key</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
     <span class="n">displayIII</span><span class="p">(</span><span class="n">imlist</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">imlist</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span><span class="n">imlist</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 
@@ -13658,7 +13736,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Photos/WhatsApp Image 2020-04-04 at 22.22.18.jpeg'  width="300"></td>    <td><img src='Photos/WhatsApp Image 2020-04-04 at 22.22.06 (1).jpeg'  width="300"></td>    <td><img src='Photos/WhatsApp Image 2020-04-04 at 22.22.06.jpeg'  width="300"></td>    </tr></table>
+<table><tr><td><img src='Photos/img0.jpg'  width="300"></td>    <td><img src='Photos/img1.jpg'  width="300"></td>    <td><img src='Photos/img2.jpg'  width="300"></td>    </tr></table>
 </div>
 
 </div>
@@ -13670,7 +13748,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Photos/WhatsApp Image 2020-04-04 at 22.15.03.jpeg'  width="300"></td>    <td><img src='Photos/WhatsApp Image 2020-04-04 at 22.14.05 (2).jpeg'  width="300"></td>    <td><img src='Photos/WhatsApp Image 2020-04-04 at 22.14.05 (1).jpeg'  width="300"></td>    </tr></table>
+<table><tr><td><img src='Photos/img3.jpg'  width="300"></td>    <td><img src='Photos/img4.jpg'  width="300"></td>    <td><img src='Photos/img5.jpg'  width="300"></td>    </tr></table>
 </div>
 
 </div>
@@ -13682,7 +13760,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Photos/WhatsApp Image 2020-04-04 at 22.14.05.jpeg'  width="300"></td>    <td><img src='Photos/WhatsApp Image 2020-04-04 at 22.14.04.jpeg'  width="300"></td>    <td><img src='Photos/WhatsApp Image 2020-04-04 at 22.12.29.jpeg'  width="300"></td>    </tr></table>
+<table><tr><td><img src='Photos/img6.jpg'  width="300"></td>    <td><img src='Photos/img7.jpg'  width="300"></td>    <td><img src='Photos/img8.jpg'  width="300"></td>    </tr></table>
 </div>
 
 </div>
@@ -13694,7 +13772,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Photos/WhatsApp Image 2020-04-04 at 22.12.07.jpeg'  width="300"></td>    <td><img src='Photos/WhatsApp Image 2020-04-04 at 22.11.59.jpeg'  width="300"></td>    <td><img src='Photos/IMG-20190915-WA0009.jpg'  width="300"></td>    </tr></table>
+<table><tr><td><img src='Photos/img9.jpg'  width="300"></td>    <td><img src='Photos/img11.jpg'  width="300"></td>    <td><img src='Photos/img12.jpg'  width="300"></td>    </tr></table>
 </div>
 
 </div>
@@ -13706,7 +13784,79 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<table><tr><td><img src='Photos/IMG-20191110-WA0037.jpg'  width="300"></td>    <td><img src='Photos/IMG-20190513-WA0014.jpg'  width="300"></td>    <td><img src='Photos/IMG-20200101-WA0021.jpg'  width="300"></td>    </tr></table>
+<table><tr><td><img src='Photos/img13.jpg'  width="300"></td>    <td><img src='Photos/img14.jpg'  width="300"></td>    <td><img src='Photos/img15.jpg'  width="300"></td>    </tr></table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table><tr><td><img src='Photos/img16.jpg'  width="300"></td>    <td><img src='Photos/img17.jpg'  width="300"></td>    <td><img src='Photos/img18.jpg'  width="300"></td>    </tr></table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table><tr><td><img src='Photos/img19.jpg'  width="300"></td>    <td><img src='Photos/img20.jpg'  width="300"></td>    <td><img src='Photos/img21.jpg'  width="300"></td>    </tr></table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table><tr><td><img src='Photos/img22.jpg'  width="300"></td>    <td><img src='Photos/img23.jpg'  width="300"></td>    <td><img src='Photos/img24.jpg'  width="300"></td>    </tr></table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table><tr><td><img src='Photos/img25.jpg'  width="300"></td>    <td><img src='Photos/img26.jpg'  width="300"></td>    <td><img src='Photos/img27.jpg'  width="300"></td>    </tr></table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table><tr><td><img src='Photos/img28.jpg'  width="300"></td>    <td><img src='Photos/img30.jpg'  width="300"></td>    <td><img src='Photos/img31.jpg'  width="300"></td>    </tr></table>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table><tr><td><img src='Photos/img32.jpg'  width="300"></td>    <td><img src='Photos/img33.jpg'  width="300"></td>    <td><img src='Photos/img34.jpg'  width="300"></td>    </tr></table>
 </div>
 
 </div>
